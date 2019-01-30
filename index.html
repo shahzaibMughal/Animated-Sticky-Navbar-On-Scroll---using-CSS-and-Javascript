@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navigation</title>
+  </head>
+  <style media="screen">
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #fefefe;
+  }
+    .main_nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      margin: 0 72px;
+      flex-wrap: wrap;
+    }
+    .main_nav .logo{
+      width: 48px;
+    }
+    .main_nav .nav_items{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .nav_items li{
+      list-style: none;
+      padding: 15px;
+
+    }
+    .nav_items li a{
+      text-decoration: none;
+      color: #000;
+      font-family: 'Roboto', sans-serif;
+      /* border-bottom: 1px solid red; */
+    }
+    .nav_items .active::after{
+      content: " ";
+      display: block;
+      margin-top: 5px;
+      height: 2px;
+      background: red;
+    }
+
+    section{
+      width: 100vw;
+      height: 100vh;
+    }
+    .sec-1{
+    }
+  </style>
+  <body>
+
+    <section class="sec-1">
+      <nav class="main_nav">
+        <img class="logo" src="https://image.flaticon.com/icons/svg/1098/1098386.svg" alt="logo">
+        <ul class="nav_items">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="main_nav_fixed">
+
+      </nav>
+
+      <h1>Section 1</h1>
+
+    </section>
+    <section class="sec-2">
+      <h1>Section 2</h1>
+    </section>
+    <section class="sec-3">
+      <h1>Section 3</h1>
+    </section>
+    <section class="sec-4">
+      <h1>Section 4</h1>
+    </section>
+  </body>
+  <script type="text/javascript">
+
+  </script>
+</html>
